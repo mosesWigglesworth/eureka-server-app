@@ -3,6 +3,6 @@ spring:
     name: eureka-server-ms
   config:
     import: optional:configserver:http://localhost:32769
-
-server:
-  port: 32770
+  cloud:
+    config:
+      profile: dev
